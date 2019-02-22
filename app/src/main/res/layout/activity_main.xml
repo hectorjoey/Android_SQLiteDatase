@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--suppress AndroidDomInspection -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/colorPrimary"
+    android:layout_height="match_parent">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginTop="30dp">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:src="@drawable/bytesworks"/>
+</LinearLayout>
+
+    <TextView
+        android:layout_marginTop="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dp"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:text="@string/details" />
+    <EditText
+        android:layout_marginTop="10dp"
+        android:id="@+id/txtName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="80dp"
+        android:inputType="textAutoComplete"
+        android:hint="@string/first_name"
+        android:ems="10"/>
+
+    <EditText
+        android:layout_marginTop="10dp"
+        android:id="@+id/txtLastName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="80dp"
+        android:inputType="text"
+        android:hint="@string/last_name"
+        android:ems="10" />
+
+    <EditText
+        android:layout_marginTop="10dp"
+        android:id="@+id/txtEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="80dp"
+        android:inputType="textEmailAddress"
+        android:hint="@string/email"
+        android:ems="10" />
+
+
+    <EditText
+        android:layout_marginTop="10dp"
+        android:id="@+id/txtPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="80dp"
+        android:hint="@string/phone"
+        android:inputType="phone"
+        android:ems="10" />
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="80dp"
+        android:text="@string/save"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"/>
+</LinearLayout>
